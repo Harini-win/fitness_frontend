@@ -13,7 +13,7 @@ const LoginForm = () => {
     }
     setError("");
     alert("Submitted successfully!");
-    window.location.assign("/");
+    window.location.assign("/home");
   };
 
   return (

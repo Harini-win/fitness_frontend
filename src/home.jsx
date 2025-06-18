@@ -17,15 +17,15 @@ export default function FitnessDashboard() {
             {[{
               title: 'Workout',
               img: './s.jpg',
-              link: './work'
+              link: '/work'
             }, {
               title: 'Progress',
               img: './p.jpg',
-              link: './progress'
+              link: '/progress'
             },{
               title: 'Bharatanatyam mode',
               img: './b.jpg',
-              link: './dance'
+              link: '/dance'
 
             }].map((workout, i) => (
               <div
