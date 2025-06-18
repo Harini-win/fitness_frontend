@@ -13,7 +13,7 @@ const LoginForm = () => {
     }
     setError("");
     alert("Submitted successfully!");
-    window.location.href = "./home"; 
+    window.location.assign("/home");
   };
 
   return (
