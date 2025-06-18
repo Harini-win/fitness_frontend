@@ -1,4 +1,6 @@
+import React, { useState,useNavigate } from "react";
 export default function FitnessDashboard() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white font-sans bg-[url('/img.jpg')]">
       <header className="bg-transparent shadow-lg shadow-black/20 backdrop-blur-[1px] text-white px-10 py-6 flex items-center justify-between">
@@ -31,7 +33,7 @@ export default function FitnessDashboard() {
               <div
                 key={i}
                 className="rounded-xl overflow-hidden shadow-lg border-2 border-white/20  shadow-black/20 backdrop-blur-[2px]"
-                onClick={() => window.location.href = workout.link}
+                onClick={() => navigate(workout.link)}
                 style={{ cursor: 'pointer' }}
               >
                 <img src={workout.img} alt={workout.title} className="h-70 w-80 object-cover rounded-3xl p-5" />

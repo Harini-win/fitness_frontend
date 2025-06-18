@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useNavigate } from "react";
 
 const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [re_password, setRe_password] = useState("");
   const [error, setError] = useState("");
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!email || !password) {
@@ -14,7 +14,7 @@ const RegisterForm = () => {
     }
     setError("");
     alert("Submitted successfully!");
-    window.location.href = "./home";
+    navigate("/home");
   };
 
   return (
