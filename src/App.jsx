@@ -1,5 +1,4 @@
 import { useState,useRef,useEffect } from 'react'
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginForm from "./login";
 import RegisterForm from "./register";
@@ -10,7 +9,7 @@ import Dance from "./dance";
 
 function App() {
 return (
-  <BrowserRouter basename={process.env.PUBLIC_URL || "/"}>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<LoginForm />} />
       <Route path="/register" element={<RegisterForm />} />
